@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    background-color: #52D3D8;
+    position: relative;
+    background-image: url('bg.jpg');
+}
+
+.container {
+    display: flex;
+    background-color: #52D3D8;
+    color: #bebebe;
+    font-family: 'Roboto', sans-serif;
+   
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('bg.jpg');
+    background-size: cover;
+}
+#responseMessage{
+    display: grid;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 50px;
+    color: #bebebe;
+    font-size: 16px;
+    line-height: 1.5;
+    z-index: 9999;
+    place-items: center;
+}
+#thalaChecker{
+    display: grid;
+
+    padding: 30px;
+    background-color: rgba(32, 14, 58,0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.75);
+    place-items: center;
+    z-index: 9999;
+
+}
+#thalaChecker input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bebebe;
+    border-radius: 20px;
+    color: aqua;
+    outline: none;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: all 0.3s ease-in-out;
+}
+
+#thalaChecker input:focus {
+    
+    color: #200E3A;
+    border-color:#200E3A; 
+}
+#thalaChecker button{
+
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #38419D;
+    border: 1px solid #bebebe;
+    border-radius: 20px;
+    color: aqua;
+    outline: none;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: all 0.3s ease-in-out;
+}
+#thalaChecker button:hover{
+    background-color: #200E3A;
+    color: #fff;
+}
+audio {
+    display: none;
+  }
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+    transition: fadeIn 0.3s ease-in-out;
+
+}
+#thala_img {
+    border-radius: 20px;
+    position: absolute;
+    height: 80vh;
+    width: auto;
+    bottom: 10px;
+    left: -50px;
+    z-index: 2;
+}
+#thala_img2 {
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30vh;
+    width: 30vh;
+}
+video{
+    border-radius: 20px;
+    height: 50vh;
+    
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
